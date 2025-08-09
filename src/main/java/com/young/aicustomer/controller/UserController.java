@@ -20,6 +20,11 @@ public class UserController {
         return new User().setNickName("jacky");
     }
 
+    @GetMapping("/test")
+    public User testAPI() {
+        return new User().setNickName("jacky");
+    }
+
     /**
      * 获取验证码
      * @param phone 手机号
