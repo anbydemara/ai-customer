@@ -23,22 +23,9 @@ spring:
         time-between-eviction-runs: 10s
   jackson:
     default-property-inclusion: non_null # JSON
-  servlet:
-    multipart:
-      enabled: true
-      max-file-size: 10MB
-      max-request-size: 10MB
-#      resolve-lazily: true
-#      in-memory-threshold: 10MB
+
 mybatis-plus:
   type-aliases-package: com.young.aicustomer.entity
 logging:
   level:
     com.young.aicustomer: debug
-
-xunfei:
-  url: https://spark-api.xf-yun.com/v2.1/chat
-  appId: 79b98775
-  apiSecret: MDA2YmNkYjBhOWM5YzNiOTc5MzUwNGMw
-  apiKey: 76f2e2926708e525fbc8841a7ba1b0e1
-  maxResponseTime: 30    # 最大响应时间，单位：秒
